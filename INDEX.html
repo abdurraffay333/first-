@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clartins cosmetics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+</head>
+<body>
+    <!--NAVBAR 1-->
+    <div class="navbar1">
+            <img src="images/Untitled-2.png" alt="" class="logos">
+    </div>
+
+    <!--NAVBAR 2-->
+    <div class="navbar2">
+            <ul>
+                <li><a href="#" class="home">HOME</a></li>
+                <li><a href="#" id="product-link">PRODUCTS</a></li>
+                <li><a href="#" class="about">ABOUT US</a></li>
+                <li><a href="#" id="contact">CONTACT US</a></li>
+            </ul>
+    </div>
+
+     <!--slider-->
+    <div class="slider">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+    <!--products-->
+    <section class="row" id="product-section">
+        <h2>CLARINS PRODUCTS</h2>
+    </section>
+    <!--products-->
+    <div class="main1">
+        <div>
+            <img src="images/pngwing.com (25).png" alt="">
+        </div>
+        <div class="maincontent">
+            <h2>OUR TOP SELLING PRODUCT</h2>
+            <p>POND'S Moisturising Lotion is a light, non-greasy lotion that gives you silky smooth skin. Its unique formulation is enriched with vitamins that soften your skin </p>
+            <a href="" class="btn">BUY NOW 20$</a>
+        </div>
+    </div>
+    <div class="imageslider">
+        <img src="images/s1.jpg" alt="">
+        <img src="images/s2.jpg" alt="">
+        <img src="images/s3.jpg" alt="">
+        <img src="images/s4.jpg" alt="">
+        <img src="images/s5.jpg" alt="">
+        <img src="images/s6.jpg" alt="">
+        <img src="images/s7.jpg" alt="">
+        <img src="images/s8.jpg" alt="">
+        <img src="images/s9.jpg" alt="">
+        <img src="images/s10.jpg" alt="">
+    </div>
+    <div class="heads">
+        <h1>CLARINS ALL PRODUCTS</h1>
+    </div>
+    <div class="buttons">
+         <button class="button-insert" onclick="filterProduct('all')">ALL</button>
+         <button class="button-insert"onclick="filterProduct('sale')">SALE</button>
+         <button class="button-insert"onclick="filterProduct('Serum')">SERUM</button>
+         <button class="button-insert"onclick="filterProduct('Hair')">HAIR</button>
+         <button class="button-insert"onclick="filterProduct('Makeup')">MAKEUP</button>
+         <button class="button-insert"onclick="filterProduct('Sunscreen')">SUNSCREEN</button>
+    </div>
+    <input type="text" id="searchInput" placeholder="SEARCH FOR CLARINS PRODUCTS" />
+    <i class="fa-solid fa-magnifying-glass i "onclick="searchProduct()" ></i>
+    <div id="products"></div>
+     
+    <div class="saleslider">
+        <img src="images data/carousel.png" alt="">
+    </div>
+
+    <div class="heads">
+        <h1>Top Rated Products</h1>
+    </div>
+<div id="products">
+    <div class="card">
+         <div><img src="top rated/1.webp" alt=""></div>
+         <div class="product-name">
+            <h4>DERMACORE BEAUTY CREAM</h4>
+         </div>
+         <div class="price-product">
+            999 PKR
+         </div>
+         <button class="product-btn"> BUY NOW</button>
+
+    </div>
+    <div class="card">
+         <div><img src="top rated/2.webp" alt=""></div>
+         <div class="product-name">
+            <h4>DERMACORE BEAUTY SPRAY</h4>
+         </div>
+         <div class="price-product">
+            1999 PKR
+         </div>
+         <button class="product-btn"> BUY NOW</button>
+
+    </div>
+    <div class="card">
+         <div><img src="top rated/3.webp" alt=""></div>
+         <div class="product-name">
+            <h4>DERMACORE BEAUTY LOTION</h4>
+         </div>
+         <div class="price-product">
+            7999 PKR
+         </div>
+         <button class="product-btn"> BUY NOW</button>
+
+    </div>
+    <div class="card">
+         <div><img src="top rated/4.webp" alt=""></div>
+         <div class="product-name">
+            <h4>DERMACORE BEAUTY LOTION 30g</h4>
+         </div>
+         <div class="price-product">
+            4999 PKR
+         </div>
+         <button class="product-btn"> BUY NOW</button>
+
+    </div>
+    <div class="card">
+         <div><img src="top rated/5.webp" alt=""></div>
+         <div class="product-name">
+            <h4>DERMACORE BEAUTY PACK</h4>
+         </div>
+         <div class="price-product">
+            2999 PKR
+         </div>
+         <button class="product-btn"> BUY NOW</button>
+
+    </div>
+    <div class="card">
+         <div><img src="top rated/6.webp" alt=""></div>
+         <div class="product-name">
+            <h4>DERMACORE BODY CREAM</h4>
+         </div>
+         <div class="price-product">
+            599 PKR
+         </div>
+         <button class="product-btn"> BUY NOW</button>
+
+    </div>
+</div>
+<form action="" class="formn">
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14479.876332703041!2d67.3508688!3d24.8649055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3330027d49fa5%3A0x4a09f9f0a67234f9!2sAptech%20Learning%20Centre%20Gulshan-e-Hadeed%20Branch!5e0!3m2!1sen!2s!4v1730984265834!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="heads">
+    <h1 class="h">Contact Us</h1>
+    </div>
+<div class="container">
+    <input id="input1" type="text" placeholder="FIRST NAME">
+    <input id="input1" type="text" placeholder="LAST NAME">
+</div>
+<div class="container">
+    <input id="input3" type="email" placeholder="ENTER YOUR EMAIL">
+</div>
+<div class="container">
+    <input id="input4" type="MESSAGE" placeholder="PUT YOUR STATEMENT">
+</div>
+<div class="container">
+<input type="button" value="SUBMIT" id="btn">
+</div>
+<div class="emails">
+    <div email1>
+        <h2>EMAIL:CLARINSCOSMETIC@GMAIL.COM</h2>
+    </div>
+    <div email2>
+        <h2>INSTA:CLARINS_COSMETICS</h2>
+    </div>
+    <div email2>
+        <h2>FB:CLARINSCOSMETIC.PK</h2>
+    </div>
+    <div email2>
+        <h2>CONTACT NUMBER:+92 316 8936601</h2>
+    </div>
+</div>
+</form>
+<div class="s">
+    <img src="images/11.11.webp" alt="">
+</div>
+<div class="aboutus">
+    <img src="images/XL_Aboutus_hero_image.avif" alt="">
+    <div class="contents">
+    <h2>ABOUT CLARINS</h2>
+    <p>We have been visionaries since day one. Seeing possibilities is what we did when we first created All Things Beauty, All in One Place® — a store experience that connected with how beauty lovers actually shopped. And it forever changed the game.</p>
+</div>
+<div class="aboutwe">
+<div class="aboutcontent">
+    <h2>The Possibilities are Beautiful®</h2>
+    <p>Our goals—Celebrating the role of beauty in our lives. Redefining how beauty is portrayed like in our Beauty & campaign. Supporting trailblazing causes. And driving more meaningful purpose for our brand, our company and our guests. Together, we will change what beauty means to the world.</p>
+</div>
+<div class="aboutcontent">
+    <h2>Vision</h2>
+    <p>To be the most loved beauty destination of our guests and the most admired retailer by our Clarins cosmetics associates, communities, partners and investors.</p>
+</div>
+<div class="aboutcontent">
+    <h2>Mission</h2>
+    <p>Every day, we use the power of beauty to bring to life the possibilities that lie within each of us — inspiring every guest and enabling each associate to build a fulfilling career</p>
+</div>
+<div class="aboutcontent">
+    <h2>Values</h2>
+    <p>We work toward our vision and mission with our values at the heart of everything we do. </p>
+</div>
+<div class="aboutcontent">
+    <h2>Respect & Safety</h2>
+    <p>We at Clarins cosmetic strive to create an environment every day that is safe and welcoming for our guests, brand partners and our associates.</p>
+
+       <p> On our path to be the most loved and admired retailer we truly believe beauty and self-care is for everyone.</p>
+        
+        <p>As a guest in our store, we ask that you respect our mission in creating a safe and inclusive environment for other guests to shop and our associates to work.</p>
+        
+        <p>We are proud of our company and the culture we have built and continue to grow.</p>
+</div>
+
+</div>
+</div>
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>We have been visionaries since day one. Seeing possibilities is what we did when we first created All Things Beauty, All in One Place® — a store experience that connected with how beauty lovers actually shopped. And it forever changed the game.</p>
+        </div>
+        <div class="footer-section links">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Email: jibranusman@gmail.com</p>
+            <p>Phone: +92-3168936601</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Your Website | Designed by Jibran
+    </div>
+</div>
+
+
+</body>
+<script src="https://kit.fontawesome.com/2f91ca355b.js" crossorigin="anonymous"></script>
+<script src="productsdata.js"></script>
+</html>
